@@ -1,447 +1,447 @@
-"Resource/UI/disguise_menu/HudMenuSpyDisguise.res"
+"Resource/UI/Disguise_Menu/HudMenuSpyDisguise.res"
 {
-	"Divider"
+	"Background"
 	{
-		"ControlName"		     					"ImagePanel"
-		"fieldName"									"Divider"
-		"xpos"										"50"
-		"ypos"										"58"
+		"ControlName"								"EditablePanel"
+		"fieldName"									"Background"
+		"xpos"										"cs-0.5"
+		"ypos"										"r128"
 		"zpos"										"0"
-		"wide"										"365"
-		"tall"										"105"
-		"fillcolor"			      					"0 0 0 0"
-		"autoResize"	        					"0"
-		"pinCorner"		        					"1"
-		"enabled"	          						"1"
-		"scaleImage"	      						"1"
-		"border"									"TFThinLineBorder"
-		"src_corner_height"							"0"
-		"src_corner_width"							"0"
-		"draw_corner_width"							"0"
-		"draw_corner_height" 						"0"
-	}
-	
-	"TitleLabel"
-	{	
-		"ControlName"								"CExLabel"
-		"fieldName"									"TitleLabel"
-		"font"										"Coolvetica"
-		"xpos"										"210"
-		"ypos"										"30"
-		"zpos"										"3"
-		"wide"										"360"
-		"tall"										"38"
-		"autoResize"								"0"
-		"pinCorner"									"0"
+		"wide"										"190"
+		"tall"										"53"
 		"visible"									"1"
 		"enabled"									"1"
-		"labelText"									"DISGUISE"
-		"textAlignment"								"Left"
-		"dulltext"									"0"
-		"fgcolor"									"255 255 255 255"
-		"brighttext"								"0"
+		"proportionaltoparent"						"1"
+		"paintbackground"							"1"
+		"paintbackgroundtype"						"0"
+		"bgcolor_override"							"0 0 0 100"
 	}
-	
-	"TitleLabelDropshadow"
-	{	
-		"ControlName"								"CExLabel"
-		"fieldName"									"TitleLabelDropshadow"
-		"font"										"Coolvetica"
-		"fgcolor"									"0 0 0 255"
-		"xpos"										"211"
-		"ypos"										"31"
-		"zpos"										"3"
-		"wide"										"360"
-		"tall"										"38"
-		"autoResize"								"0"
-		"pinCorner"									"0"
-		"visible"									"1"
-		"enabled"									"1"
-		"labelText"									"DISGUISE"
-		"textAlignment"								"Left"
-		"dulltext"									"1"
-		"brighttext"								"0"
-	}	
-	
 	"ToggleLabel"
-	{	
+	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"ToggleLabel"
-		"font"										"SpectatorKeyHints"
-		"fgcolor"									"255 255 255 255"
-		"xpos"										"60"
-		"ypos"										"60"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"200"
-		"tall"										"13"
-		"autoResize"								"0"
-		"pinCorner"									"0"
+		"wide"										"190"
+		"tall"										"9"
 		"visible"									"1"
 		"enabled"									"1"
 		"labelText"									"#Hud_Menu_Spy_Minus_Toggle"
-		"textAlignment"								"Left"
-		"dulltext"									"0"
-		"brighttext"								"0"
-	}
-	
-	"CancelLabel"
-	{	
-		"ControlName"								"CExLabel"
-		"fieldName"									"CancelLabel"
+		"textAlignment"								"west"
+		"textinsetx"								"5"
 		"font"										"SpectatorKeyHints"
-		"fgcolor"									"255 255 255 255"
-		"xpos"										"200"
-		"ypos"										"60"
-		"zpos"										"2"
-		"wide"										"200"
-		"tall"										"13"
-		"autoResize"								"0"
-		"pinCorner"									"0"
-		"visible"									"1"
-		"enabled"									"1"
-		"labelText"									"#Hud_Menu_Build_Cancel"
-		"textAlignment"								"east"
-		"dulltext"									"0"
-		"brighttext"								"0"
+		"proportionaltoparent"						"1"
+		"paintbackground"							"1"
+		"paintbackgroundtype"						"0"
+		"bgcolor_override"							"White"
+		"fgcolor"									"Black"
+
+		"pin_to_sibling"							"Background"
 	}
-	
 	"class_item_red_1"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_red_1"
-		"xpos"										"52"
-		"ypos"										"50"
+		"xpos"										"-5"
+		"ypos"										"-2"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"1"
-	}	
-	
+
+		"pin_to_sibling"							"Background"
+	}
 	"class_item_blue_1"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_blue_1"
-		"xpos"										"52"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"0"
+
+		"pin_to_sibling"							"class_item_red_1"
 	}
-	
 	"class_item_red_2"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_red_2"
-		"xpos"										"92"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"1"
-	}	
-	
+
+		"pin_to_sibling"							"class_item_red_1"
+		"pin_corner_to_sibling"						"PIN_TOPLEFT"
+		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	}
 	"class_item_blue_2"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_blue_2"
-		"xpos"										"92"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"0"
+
+		"pin_to_sibling"							"class_item_red_2"
 	}
-	
 	"class_item_red_3"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_red_3"
-		"xpos"										"132"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"1"
-	}	
-	
+
+		"pin_to_sibling"							"class_item_red_2"
+		"pin_corner_to_sibling"						"PIN_TOPLEFT"
+		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	}
 	"class_item_blue_3"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_blue_3"
-		"xpos"										"132"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"0"
+
+		"pin_to_sibling"							"class_item_red_3"
 	}
-	
 	"class_item_red_4"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_red_4"
-		"xpos"										"172"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"1"
-	}	
-	
+
+		"pin_to_sibling"							"class_item_red_3"
+		"pin_corner_to_sibling"						"PIN_TOPLEFT"
+		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	}
 	"class_item_blue_4"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_blue_4"
-		"xpos"										"172"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"0"
+
+		"pin_to_sibling"							"class_item_red_4"
 	}
-	
 	"class_item_red_5"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_red_5"
-		"xpos"										"212"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"1"
-	}	
-	
+
+		"pin_to_sibling"							"class_item_red_4"
+		"pin_corner_to_sibling"						"PIN_TOPLEFT"
+		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	}
 	"class_item_blue_5"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_blue_5"
-		"xpos"										"212"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"0"
+
+		"pin_to_sibling"							"class_item_red_5"
 	}
-	
 	"class_item_red_6"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_red_6"
-		"xpos"										"252"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"1"
-	}	
-	
+
+		"pin_to_sibling"							"class_item_red_5"
+		"pin_corner_to_sibling"						"PIN_TOPLEFT"
+		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	}
 	"class_item_blue_6"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_blue_6"
-		"xpos"										"252"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"0"
+
+		"pin_to_sibling"							"class_item_red_6"
 	}
-	
 	"class_item_red_7"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_red_7"
-		"xpos"										"292"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"1"
-	}	
-	
+
+		"pin_to_sibling"							"class_item_red_6"
+		"pin_corner_to_sibling"						"PIN_TOPLEFT"
+		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	}
 	"class_item_blue_7"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_blue_7"
-		"xpos"										"292"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"0"
+
+		"pin_to_sibling"							"class_item_red_7"
 	}
-	
 	"class_item_red_8"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_red_8"
-		"xpos"										"332"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"1"
-	}	
-	
+
+		"pin_to_sibling"							"class_item_red_7"
+		"pin_corner_to_sibling"						"PIN_TOPLEFT"
+		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	}
 	"class_item_blue_8"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_blue_8"
-		"xpos"										"332"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"0"
+
+		"pin_to_sibling"							"class_item_red_8"
 	}
-	
 	"class_item_red_9"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_red_9"
-		"xpos"										"372"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"1"
-	}	
-	
+
+		"pin_to_sibling"							"class_item_red_8"
+		"pin_corner_to_sibling"						"PIN_TOPLEFT"
+		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	}
 	"class_item_blue_9"
 	{
 		"ControlName"								"EditablePanel"
 		"fieldName"									"class_item_blue_9"
-		"xpos"										"372"
-		"ypos"										"50"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"45"
-		"tall"										"120"
+		"wide"										"20"
+		"tall"										"50"
 		"visible"									"0"
-	}
 
-	"NumberBg1"	
-	{
-		"ControlName"								"CIconPanel"
-		"fieldName"									"NumberBg"
-		"xpos"										"75"
-		"ypos"										"140"
-		"zpos"										"4"
-		"wide"										"15"
-		"tall"										"15"
-		"visible"									"0"
-		"enabled"									"1"
-		"scaleImage"								"1"	
-		"icon"										"ico_key_blank"
-		"iconColor"									"255 255 255 255"
+		"pin_to_sibling"							"class_item_red_9"
 	}
-	
 	"NumberLabel1"
-	{	
+	{
 		"ControlName"								"CExLabel"
-		"fieldName"									"NumberLabel"
-		"font"										"Default"
-		"fgcolor"									"Black"
-		"xpos"										"75"
-		"ypos"										"140"
-		"zpos"										"5"
-		"wide"										"15"
-		"tall"										"15"
-		"autoResize"								"0"
-		"pinCorner"									"0"
+		"fieldName"									"NumberLabel1"
+		"xpos"										"1"
+		"ypos"										"0"
+		"zpos"										"10"
+		"wide"										"20"
+		"tall"										"12"
 		"visible"									"0"
 		"enabled"									"1"
 		"labelText"									"1"
+		"proportionaltoparent"						"1"
 		"textAlignment"								"Center"
-		"dulltext"									"1"
-		"brighttext"								"0"
-	}
+		"font"										"m0refont11"
+		"fgcolor"									"White"
 
-	"NumberBg2"
-	{
-		"ControlName"								"CIconPanel"
-		"fieldName"									"NumberBg"
-		"xpos"										"227"
-		"ypos"										"140"
-		"zpos"										"4"
-		"wide"										"15"
-		"tall"										"15"
-		"visible"									"0"
-		"enabled"									"1"
-		"scaleImage"								"1"	
-		"icon"										"ico_key_blank"
-		"iconColor"									"255 255 255 255"
+		"pin_to_sibling"							"class_item_red_2"
+		"pin_corner_to_sibling"						"PIN_CENTER_BOTTOM"
+		"pin_to_sibling_corner"						"PIN_CENTER_BOTTOM"
 	}
-	
 	"NumberLabel2"
-	{	
+	{
 		"ControlName"								"CExLabel"
-		"fieldName"									"NumberLabel"
-		"font"										"Default"
-		"fgcolor"									"Black"
-		"xpos"										"227"
-		"ypos"										"140"
-		"zpos"										"5"
-		"wide"										"15"
-		"tall"										"15"
-		"autoResize"								"0"
-		"pinCorner"									"0"
+		"fieldName"									"NumberLabel2"
+		"xpos"										"1"
+		"ypos"										"0"
+		"zpos"										"10"
+		"wide"										"20"
+		"tall"										"12"
 		"visible"									"0"
 		"enabled"									"1"
 		"labelText"									"2"
+		"proportionaltoparent"						"1"
 		"textAlignment"								"Center"
-		"dulltext"									"1"
-		"brighttext"								"0"
+		"font"										"m0refont11"
+		"fgcolor"									"White"
+
+		"pin_to_sibling"							"class_item_red_5"
+		"pin_corner_to_sibling"						"PIN_CENTER_BOTTOM"
+		"pin_to_sibling_corner"						"PIN_CENTER_BOTTOM"
 	}
-	
-	"NumberBg3"
-	{
-		"ControlName"								"CIconPanel"
-		"fieldName"									"NumberBg"
-		"xpos"										"379"
-		"ypos"										"140"
-		"zpos"										"4"
-		"wide"										"15"
-		"tall"										"15"
-		"visible"									"0"
-		"enabled"									"1"
-		"scaleImage"								"1"	
-		"icon"										"ico_key_blank"
-		"iconColor"									"255 255 255 255"
-	}
-	
 	"NumberLabel3"
-	{	
+	{
 		"ControlName"								"CExLabel"
-		"fieldName"									"NumberLabel"
-		"font"										"Default"
-		"fgcolor"									"Black"
-		"xpos"										"379"
-		"ypos"										"140"
-		"zpos"										"5"
-		"wide"										"15"
-		"tall"										"15"
-		"autoResize"								"0"
-		"pinCorner"									"0"
+		"fieldName"									"NumberLabel3"
+		"xpos"										"1"
+		"ypos"										"0"
+		"zpos"										"10"
+		"wide"										"20"
+		"tall"										"12"
 		"visible"									"0"
 		"enabled"									"1"
 		"labelText"									"3"
+		"proportionaltoparent"						"1"
 		"textAlignment"								"Center"
-		"dulltext"									"1"
-		"brighttext"								"0"
+		"font"										"m0refont11"
+		"fgcolor"									"White"
+
+		"pin_to_sibling"							"class_item_red_8"
+		"pin_corner_to_sibling"						"PIN_CENTER_BOTTOM"
+		"pin_to_sibling_corner"						"PIN_CENTER_BOTTOM"
 	}
-	
-	
-	
-	
-	
-	//////////////////////////////////REMOVED STUFF//////////////////////////////////
-	
-	"MainBackground"	
+
+
+
+	//==================================================================================================================================================
+	// REMOVED ELEMENTS
+	//==================================================================================================================================================
+
+	"MainBackground"
 	{
 		"ControlName"								"CIconPanel"
 		"fieldName"									"MainBackground"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
+	"Divider"
+	{
+		"ControlName"								"ImagePanel"
+		"fieldName"									"Divider"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
+	"TitleLabel"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"TitleLabel"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
+	"TitleLabelDropshadow"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"TitleLabelDropshadow"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
+	"CancelLabel"
+	{
+		"ControlName"								"CExLabel"
+		"fieldName"									"CancelLabel"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
+	"NumberBg1"
+	{
+		"ControlName"								"CIconPanel"
+		"fieldName"									"NumberBg1"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
+	"NumberBg2"
+	{
+		"ControlName"								"CIconPanel"
+		"fieldName"									"NumberBg2"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
+	"NumberBg3"
+	{
+		"ControlName"								"CIconPanel"
+		"fieldName"									"NumberBg3"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"

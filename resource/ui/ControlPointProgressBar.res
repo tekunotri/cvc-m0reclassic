@@ -14,14 +14,13 @@
 		"visible"									"0"
 		"enabled"									"1"
 	}
-	
-	
-	
-	
-	
-	//////////////////////////////////REMOVED STUFF//////////////////////////////////
-	
-	
+
+
+
+	//==================================================================================================================================================
+	// REMOVED ELEMENTS
+	//==================================================================================================================================================
+
 	"ProgressBar"
 	{
 		"ControlName"								"CircularProgressBar"
@@ -31,7 +30,6 @@
 		"visible"									"0"
 		"enabled"									"0"
 	}
-
 	"Teardrop"
 	{
 		"ControlName"								"CIconPanel"
@@ -41,7 +39,6 @@
 		"visible"									"0"
 		"enabled"									"0"
 	}
-	
 	"TeardropSide"
 	{
 		"ControlName"								"CIconPanel"
@@ -51,9 +48,8 @@
 		"visible"									"0"
 		"enabled"									"0"
 	}
-
 	"ProgressText"
-	{	
+	{
 		"ControlName"								"Label"
 		"fieldName"									"ProgressText"
 		"wide"										"0"
@@ -61,7 +57,6 @@
 		"visible"									"0"
 		"enabled"									"0"
 	}
-
 	"Blocked"
 	{
 		"ControlName"								"CIconPanel"

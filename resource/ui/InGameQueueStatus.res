@@ -15,7 +15,6 @@
 		"mouseinputenabled"							"0"
 		"alpha"										"200"
 	}
-
 	"CTFLogoPanel"
 	{
 		"ControlName"								"CTFLogoPanel"
@@ -31,12 +30,11 @@
 		"radius"									"7"
 		"velocity"									"100"
 
-		"fgcolor_override"							"255 255 255 255"
+		"fgcolor_override"							"White"
 	}
-
 	"QueueText"
 	{
-		"ControlName"								"Label"
+		"ControlName"								"CExLabel"
 		"fieldName"									"QueueText"
 		"xpos"										"rs1-7"
 		"ypos"										"cs-0.5"
@@ -45,9 +43,9 @@
 		"tall"										"f0"
 		"visible"									"0"
 		"enabled"									"1"
-		"font"										"Coolvetica"
+		"font"										"m0refont16"
 		"AllCaps"									"1"
-		"fgcolor_override"							"255 255 255 255"
+		"fgcolor"									"White"
 		"textAlignment"								"east"
 		"labelText"									"%queue_state%"
 		"proportionaltoparent"						"1"

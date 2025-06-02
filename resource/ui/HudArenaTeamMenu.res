@@ -1,4 +1,4 @@
-"Resource/UI/ArenaTeamMenu.res"
+"Resource/UI/HudArenaTeamMenu.res"
 {
 	"team"
 	{
@@ -8,147 +8,184 @@
 		"ypos"										"0"
 		"wide"										"f0"
 		"tall"										"480"
-		"autoResize"								"0"
-		"pinCorner"									"0"
 		"visible"									"1"
 		"enabled"									"1"
-		"tabPosition"								"0"
 	}
-	
-	"SysMenu"
+
+	"MapName"
 	{
-		"ControlName"								"Menu"
-		"fieldName"									"SysMenu"
+		"ControlName"								"CExLabel"
+		"fieldName"									"MapName"
+		"xpos"										"cs-0.5"
+		"ypos"										"110"
+		"zpos"										"1"
+		"wide"										"f0"
+		"tall"										"30"
+		"visible"									"0"				//1 to enable
+		"enabled"									"1"
+		"textAlignment"								"center"
+		"font"										"m0refont24"
+		"fgcolor"									"White"
+		"proportionaltoparent"						"1"
+	}
+
+	//==================================================================================================================================================
+	// TEAMS ANCHOR
+	// This element can be used to move all the team selection elements as a whole
+	//==================================================================================================================================================
+	"TeamsAnchor"									//THIS MOVES THE WHOLE TEAM MENU
+	{
+		"ControlName"								"EditablePanel"
+		"fieldname"									"TeamsAnchor"
+		"xpos"										"cs-0.5"
+		"ypos"										"c-6"
+		"wide"										"2"
+		"tall"										"2"
+		"visible"									"0"
+		"enabled"									"1"
+		"proportionaltoparent"						"1"
+		"alpha"										"0"
+	}
+
+	"WhiteBar"
+	{
+		"ControlName"								"EditablePanel"
+		"fieldname"									"WhiteBar"
 		"xpos"										"0"
 		"ypos"										"0"
-		"wide"										"64"
-		"tall"										"24"
-		"autoResize"								"0"
-		"pinCorner"									"0"
-		"visible"									"0"
-		"enabled"									"0"
-		"tabPosition"								"0"
-	}
-	
-	"teambutton2"
-	{
-		"ControlName"								"CTFTeamButton"
-		"fieldName"									"teambutton2"
-		"xpos"										"c-125"
-		"ypos"										"c-7"
-		"zpos"										"3"		
-		"wide"										"124"
+		"zpos"										"0"
+		"wide"										"2"
 		"tall"										"12"
-		"autoResize"								"0"
-		"pinCorner"									"2"
 		"visible"									"1"
 		"enabled"									"1"
-		"tabPosition"								"1"
-		"labelText"									"&1"
-		"textAlignment"								"south-west"
-		"dulltext"									"0"
-		"brighttext"								"0"
-		"paintborder"								"0"
+		"proportionaltoparent"						"1"
+		"paintbackground"							"1"
+		"paintbackgroundtype"						"0"
+		"bgcolor_override"							"White"
+
+		"pin_to_sibling"							"TeamsAnchor"
+	}
+
+	//==================================================================================================================================================
+	// FIGHT
+	//==================================================================================================================================================
+	"FightButton"
+	{
+		"ControlName"								"CExButton"
+		"fieldname"									"FightButton"
+		"xpos"										"0"
+		"ypos"										"0"
+		"zpos"										"1"
+		"wide"										"125"
+		"tall"										"12"
+		"visible"									"1"
+		"enabled"									"1"
+		"use_proportional_insets"					"1"
+		"font"										"m0refont11"
+		"AllCaps"									"1"
+		"labeltext"									"Fight"
+		"textAlignment"								"west"
 		"command"									"jointeam spectate"
-		"associated_model"							"autodoor"
-		"font"										"invisiblelolol"
-		"fgcolor"									"255 255 255 0"
+		"proportionaltoparent"						"1"
+		"RoundedCorners"							"0"
+		"sound_depressed"							"UI/buttonclick.wav"
+
+		"paintbackground"							"1"
+		"defaultBgColor_override"					"Red"
+		"armedBgColor_override"						"165 40 40 255"
+		"depressedBgColor_override"					"Red"
+
+		"defaultFgColor_override"					"White"
+		"armedFgColor_override"						"White"
+		"depressedFgColor_override"					"White"
+
+		"pin_to_sibling"							"WhiteBar"
+		"pin_corner_to_sibling"						"PIN_TOPRIGHT"
+		"pin_to_sibling_corner"						"PIN_TOPLEFT"
 	}
-	
-	"teambutton3"
+	"FightShortKey"
 	{
-		"ControlName"								"CTFTeamButton"
-		"fieldName"									"teambutton3"
-		"xpos"										"c1"
-		"ypos"										"c-7"
-		"zpos"										"3"		
-		"wide"										"124"
-		"tall"										"12"
-		"autoResize"								"0"
-		"pinCorner"									"2"
+		"ControlName"								"CExButton"
+		"fieldName"									"FightShortKey"
+		"xpos"										"9999"
+		"labelText"									"&1"
+		"Command"									"jointeam spectate"
 		"visible"									"1"
-		"enabled"									"1"
-		"tabPosition"								"2"
-		"labelText"									"&2"
-		"textAlignment"								"south-west"
-		"dulltext"									"0"
-		"brighttext"								"0"
-		"paintborder"								"0"
-		"command"									"jointeam spectatearena"
-		"associated_model"							"spectate"	
-		"font"										"invisiblelolol"
-		"fgcolor"									"255 255 255 0"
 	}
-	
-	"TeamMenuFight"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"TeamMenuFIght"
-		"xpos"										"c-115"
-		"ypos"										"c-6"
-		"zpos"										"2"
-		"wide"										"124"
-		"tall"										"12"
-		"autoResize"								"0"
-		"pinCorner"									"0"
-		"visible"									"1"
-		"enabled"									"1"
-		"labelText"									"FIGHT"
-		"textAlignment"								"left"
-		"dulltext"									"0"
-		"brighttext"								"0"
-		"wrap"										"0"
-		"font"										"Default"
-		"fgcolor"									"255 255 255 255"
-	}
-	
-	"TeamMenuSpectate"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"TeamMenuSpectate"
-		"xpos"										"c1"
-		"ypos"										"c-6"
-		"zpos"										"2"
-		"wide"										"114"
-		"tall"										"12"
-		"autoResize"								"0"
-		"pinCorner"									"0"
-		"visible"									"1"
-		"enabled"									"1"
-		"labelText"									"SPECTATE"
-		"textAlignment"								"east"
-		"dulltext"									"0"
-		"brighttext"								"0"
-		"wrap"										"0"
-		"font"										"Default"
-		"fgcolor"									"255 255 255 255"
-	}
-	
 	"FightCount"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"FightCount"
-		"xpos"										"c-125"
-		"ypos"										"c-20"
+		"xpos"										"-5"
+		"ypos"										"15"
 		"zpos"										"2"
 		"wide"										"120"
 		"tall"										"36"
-		"autoResize"								"0"
-		"pinCorner"									"0"
 		"visible"									"1"
 		"enabled"									"1"
 		"labelText"									"1"
 		"textAlignment"								"east"
-		"font"										"M0refont36"
-		"fgcolor"									"255 255 255 255"
-	}		
-	
+		"font"										"m0refont36"
+		"fgcolor"									"White"
+		"mouseinputenabled"							"0"
+
+		"pin_to_sibling"							"FightButton"
+		"pin_corner_to_sibling"						"PIN_TOPRIGHT"
+		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	}
+
+	//==================================================================================================================================================
+	// SPECTATE
+	//==================================================================================================================================================
+	"SpectateButton"
+	{
+		"ControlName"								"CExButton"
+		"fieldname"									"SpectateButton"
+		"xpos"										"0"
+		"ypos"										"0"
+		"zpos"										"1"
+		"wide"										"125"
+		"tall"										"12"
+		"visible"									"1"
+		"enabled"									"1"
+		"use_proportional_insets"					"1"
+		"font"										"m0refont11"
+		"AllCaps"									"1"
+		"labeltext"									"Spectate"
+		"textAlignment"								"east"
+		"command"									"jointeam spectatearena"
+		"proportionaltoparent"						"1"
+		"RoundedCorners"							"0"
+		"sound_depressed"							"UI/buttonclick.wav"
+
+		"paintbackground"							"1"
+		"defaultBgColor_override"					"60 60 60 255"
+		"armedBgColor_override"						"40 40 40 255"
+		"depressedBgColor_override"					"60 60 60 255"
+
+		"defaultFgColor_override"					"White"
+		"armedFgColor_override"						"White"
+		"depressedFgColor_override"					"White"
+
+		"pin_to_sibling"							"WhiteBar"
+		"pin_corner_to_sibling"						"PIN_TOPLEFT"
+		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	}
+	"SpectateShortKey"
+	{
+		"ControlName"								"CExButton"
+		"fieldName"									"SpectateShortKey"
+		"xpos"										"9999"
+		"labelText"									"&2"
+		"Command"									"jointeam spectatearena"
+		"visible"									"1"
+	}
 	"SpectateCount"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"SpectateCount"
-		"xpos"										"c5"
-		"ypos"										"c-20"
+		"xpos"										"-5"
+		"ypos"										"15"
 		"zpos"										"2"
 		"wide"										"120"
 		"tall"										"36"
@@ -156,210 +193,102 @@
 		"enabled"									"1"
 		"labelText"									"2"
 		"textAlignment"								"west"
-		"font"										"M0refont36"
-		"fgcolor"									"255 255 255 255"
-	}
-	
-	"FightFrame"
-	{
-		"ControlName"     							"ScalableImagePanel"
-		"fieldName"	        						"FightFrame"
-		"xpos"			          					"c-125"
-		"ypos"		          						"c-6"
-		"zpos"		          						"1"		
-		"wide"			          					"124"
-		"tall"			          					"12"
-		"autoResize"        						"0"
-		"pinCorner"		       					 	"0"
-		"visible"	          						"1"
-		"enabled"	          						"1"
-		"image"		           						"../HUD/tournament_panel_red"
-		"src_corner_height"	  						"15"
-		"src_corner_width"	  						"15"
-		"draw_corner_width"	  						"0"	
-		"draw_corner_height"  						"0"
-	}
-	
-	"Tournamenttransbar"
-	{	
-		"ControlName"								"ImagePanel"
-		"fieldname"     							"tournamenttransbar"
-		"xpos"		    							"c-6"
-		"ypos"		    							"c-6"
-		"zpos"         								"-20"
-		"wide"		    							"20"
-		"tall"		    							"12"
-		"autoResize"  								"0"
-		"pinCorner" 								"0"
-		"visible"	    							"1"
-		"enabled"		   						 	"1"
-		"fillcolor"     							"255 255 255 255"
-	}
-	
-	"SpectateFrame"
-	{
-		"ControlName"								"ImagePanel"
-		"fieldName"	        						"SpectateFrame"		
-		"xpos"		          						"c1"
-		"ypos"		          						"c-6"
-		"zpos"		          						"1"		
-		"wide"		          						"124"
-		"tall"		          						"12"
-		"autoResize"	       					 	"0"
-		"pinCorner"	        						"0"
-		"visible"	          						"1"
-		"enabled"									"1"
-		"fillcolor"     							"60 60 60 255"
-	}
-	
-	"MenuBG"
-	{
-		"ControlName"								"CModelPanel"
-		"fieldName"									"MenuBG"
-		"xpos"										"-8888"
-		"ypos"										"0"
-		"zpos"										"0"		
-		"wide"										"0"
-		"tall"										"0"
-		"autoResize"								"0"
-		"pinCorner"									"0"
-		"visible"									"1"
-		"enabled"									"1"
-		"fov"										"20"
-		
-		"model"
-		{
-			"modelname"								"models/vgui/ui_arena01.mdl"
-			"skin"									"0"
-			"angles_x" 								"0"
-			"angles_y" 								"180"
-			"angles_z" 								"0"
-			"origin_x" 								"290"
-			"origin_x_hidef" 						"305"
-			"origin_x_lodef" 						"320"
-			"origin_y" 								"0"
-			"origin_z" 								"-34"
-		}
-	}	
-	
-	"autodoor"
-	{
-		"ControlName"								"CModelPanel"
-		"fieldName"									"autodoor"
-		"xpos"										"-8888"
-		"ypos"										"0"
-		"zpos"										"2"		
-		"wide"										"0"
-		"tall"										"0"
-		"autoResize"								"0"
-		"pinCorner"									"0"
-		"visible"									"1"
-		"enabled"									"1"
-		"fov"										"20"
-		
-		"model"
-		{
-			"modelname"								"models/vgui/ui_arenadoor01.mdl"
-			"skin"									"0"
-			"angles_x" 								"0"
-			"angles_y" 								"180"
-			"angles_z" 								"0"
-			"origin_x" 								"290"
-			"origin_x_lodef" 						"320"
-			"origin_x_hidef" 						"305"
-			"origin_y"							 	"0"
-			"origin_z" 								"-34"
-			
-			"animation"
-			{
-				"name"								"idle_enabled"
-				"sequence"							"idle"
-				"default"							"1"
-			}
+		"font"										"m0refont36"
+		"fgcolor"									"White"
+		"mouseinputenabled"							"0"
 
-			"animation"
-			{
-				"name"								"enter_enabled"
-				"sequence"							"hoveropen"
-			}
-			
-			"animation"
-			{
-				"name"								"exit_enabled"
-				"sequence"							"hoverclose"
-			}
-		}
-	}		
-	
-	"spectate"
-	{
-		"ControlName"								"CModelPanel"
-		"fieldName"									"spectate"
-		"xpos"										"-8888"
-		"ypos"										"0"
-		"zpos"										"0"		
-		"wide"										"0"
-		"tall"										"0"
-		"autoResize"								"0"
-		"pinCorner"									"0"
-		"visible"									"1"
-		"enabled"									"1"
-		"fov"										"20"
-		
-		"model"
-		{
-			"modelname"								"models/vgui/UI_team01_spectate.mdl"
-			"skin"									"0"
-			"angles_x" 								"0"
-			"angles_y" 								"180"
-			"angles_z" 								"0"
-			"origin_x" 								"290"
-			"origin_x_lodef" 						"320"
-			"origin_x_hidef" 						"305"
-			"origin_y" 								"0"
-			"origin_z" 								"-34"
-			
-			"animation"
-			{
-				"name"								"idle_enabled"
-				"sequence"							"idle"
-				"default"							"1"
-			}
-
-			"animation"
-			{
-				"name"								"enter_enabled"
-				"sequence"							"hover"
-			}
-			
-			"animation"
-			{
-				"name"								"exit_enabled"
-				"sequence"							"idle"
-			}
-		}
+		"pin_to_sibling"							"SpectateButton"
 	}
-	
-	
-	
-	
-	
-	
-	//////////////////////////////////REMOVED STUFF//////////////////////////////////
 
-	"MapInfo"
+
+
+	//==================================================================================================================================================
+	// REMOVED ELEMENTS
+	//==================================================================================================================================================
+
+	"teambutton2"
 	{
-		"ControlName"								"HTML"
-		"fieldName"									"MapInfo"
+		"ControlName"								"CTFTeamButton"
+		"fieldName"									"teambutton2"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
-	"mapname"
+	"teambutton3"
 	{
-		"ControlName"								"Label"
-		"fieldName"									"mapname"
+		"ControlName"								"CTFTeamButton"
+		"fieldName"									"teambutton3"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
+	"MenuBG"
+	{
+		"ControlName"								"CModelPanel"
+		"fieldName"									"MenuBG"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
+	"autodoor"
+	{
+		"ControlName"								"CModelPanel"
+		"fieldName"									"autodoor"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
+	"spectate"
+	{
+		"ControlName"								"CModelPanel"
+		"fieldName"									"spectate"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
+	"SysMenu"
+	{
+		"ControlName"								"Menu"
+		"fieldName"									"SysMenu"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
+	"MapInfo"
+	{
+		"ControlName"								"HTML"
+		"fieldName"									"MapInfo"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
+	"CancelButton"
+	{
+		"ControlName"								"CExButton"
+		"fieldName"									"CancelButton"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
@@ -369,9 +298,11 @@
 	{
 		"ControlName"								"ImagePanel"
 		"fieldName"									"ShadedBar"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
-	}		
+	}
 }

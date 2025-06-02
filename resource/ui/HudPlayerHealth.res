@@ -1,5 +1,5 @@
 "Resource/UI/HudPlayerHealth.res"
-{	
+{
 	"HudPlayerHealth"
 	{
 		"ControlName"								"EditablePanel"
@@ -59,7 +59,7 @@
 		"image"										"replay/thumbnails/health_border_vc"
 		"scaleImage"								"1"
 	}
-		"HealthCrossBorderbuff"
+	"HealthCrossBorderbuff"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"HealthCrossBorderbuff"
@@ -120,7 +120,7 @@
 		"labelText" 		         				"%Health%"
 		"textAlignment"         				 	"left"	
 		"font"                   				 	"medium72"
-		"fgcolor"	    	         				"255 255 200 255"
+		"fgcolor"	    	         				"Health Numbers"
 	}
 	
 	"PlayerStatusHealthValueShadow"
@@ -137,7 +137,7 @@
 		"labelText"	  	         				 	"%Health%"
 		"textAlignment"	         				 	"left"	
 		"font"                   				 	"medium72"
-		"fgcolor"	     	         				"50 50 50 255"
+		"fgcolor"	     	         				"CVCShadow"
 	}
 	
 	"PlayerStatusHealthValueShadowExtra"

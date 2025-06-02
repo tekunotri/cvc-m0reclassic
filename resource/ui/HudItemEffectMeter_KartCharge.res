@@ -1,59 +1,20 @@
-"Resource/UI/HudItemEffectMeter_Scout.res"
+#base "huditemeffectmeter.res"
+
+"Resource/UI/HudItemEffectMeter_KartCharge.res"
 {
-	HudItemEffectMeter
+	"HudItemEffectMeter"
 	{
-		"fieldName"									"HudItemEffectMeter"
-		"visible"									"1"
-		"enabled"									"1"
-		"xpos"										"c-69"
-		"ypos"										"c100"	
-		"wide"										"500"
-		"tall"										"500"
-		"MeterFG"									"White"
-		"MeterBG"									"Gray"
+		"ypos"										"c100"
+		"tall"										"28"
 	}
-	
 	"ItemEffectMeterLabel"
 	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"ItemEffectMeterLabel"
-		"xpos"										"0"
-		"ypos"										"22"
-		"zpos"										"2"
-		"wide"										"140"
-		"tall"										"8"
-		"autoResize"								"1"
-		"pinCorner"									"2"
-		"visible"									"1"
-		"enabled"									"1"
-		"tabPosition"								"0"
-		"labelText"									"#TF_KART"
-		"textAlignment"								"center"
-		"dulltext"									"0"
-		"brighttext"								"0"
-		"font"										"TFFontSmall"
-		"fgcolor_override"							"150 150 150 255"
+		"ypos"										"rs1"
 	}
-
 	"ItemEffectMeter"
-	{	
-		"ControlName"								"ContinuousProgressBar"
-		"fieldName"									"ItemEffectMeter"
-		"font"										"Default"
-		"xpos"										"0"
-		"ypos"										"20"
-		"zpos"										"2"
-		"wide"										"140"
-		"tall"										"2"				
-		"autoResize"								"0"
-		"pinCorner"									"0"
-		"visible"									"1"
-		"enabled"									"1"
-		"textAlignment"								"Center"
-		"dulltext"									"0"
-		"brighttext"								"0"
+	{
+		"ypos"										"18"
 	}
-	
 	"ItemEffectMeterCount"
 	{
 		"ControlName"								"CExLabel"
@@ -61,32 +22,12 @@
 		"xpos"										"0"
 		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"140"
-		"tall"										"18"		
-		"pinCorner"									"2"
-		"visible"									"1"
+		"wide"										"f0"
+		"tall"										"18"
 		"enabled"									"1"
-		"tabPosition"								"0"
+		"proportionaltoparent"						"1"
 		"labelText"									"%progresscount%"
 		"textAlignment"								"center"
-		"dulltext"									"0"
-		"brighttext"								"0"
 		"font"										"m0refont16"
-	}
-	
-	
-	
-	
-	
-	//////////////////////////////////REMOVED STUFF//////////////////////////////////
-	
-	"ItemEffectMeterBG"
-	{
-		"ControlName"								"CTFImagePanel"
-		"fieldName"									"ItemEffectMeterBG"
-		"wide"										"0"
-		"tall"										"0"
-		"visible"									"0"
-		"enabled"									"0"
 	}
 }

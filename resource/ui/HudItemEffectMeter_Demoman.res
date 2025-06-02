@@ -1,104 +1,97 @@
 "Resource/UI/HudItemEffectMeter_Demoman.res"
 {
-	HudItemEffectMeter
+	"HudItemEffectMeter"
 	{
 		"fieldName"									"HudItemEffectMeter"
 		"visible"									"1"
 		"enabled"									"1"
-		"xpos"										"r55"
-		"ypos"										"r34"
-		"wide"										"200"
-		"tall"										"50"
+		"xpos"										"c162"
+		"ypos"										"rs1-3"
+		"wide"										"40"
+		"tall"										"32"
 		"MeterFG"									"White"
 		"MeterBG"									"Gray"
 	}
-	
 	"ItemEffectMeterLabel"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"ItemEffectMeterLabel"
-		"xpos"										"0"
-		"ypos"										"13"
+		"xpos"										"cs-0.5"
+		"ypos"										"rs1"
 		"zpos"										"2"
-		"wide"										"50"
-		"tall"										"30"
-		"autoResize"								"1"
-		"pinCorner"									"2"
+		"wide"										"f0"
+		"tall"										"10"
 		"visible"									"1"
 		"enabled"									"1"
-		"tabPosition"								"0"
+		"proportionaltoparent"						"1"
 		"labelText"									"#TF_Ball"
-		"textAlignment"								"east"
-		"dulltext"									"0"
-		"brighttext"								"0"
-		"font"										"TFFontSmall"
-		"fgcolor_override" 							"255 255 255 255"
+		"textAlignment"								"center"
+		"font"										"ScoreboardVerySmall"
+		"fgcolor"									"White"
 	}
-
 	"ItemEffectMeterCount"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"ItemEffectMeterCount"
-		"xpos"										"0"
+		"xpos"										"cs-0.5"
 		"ypos"										"0"
 		"zpos"										"2"
-		"wide"										"50"
-		"tall"										"30"	
-		"pinCorner"									"2"
+		"wide"										"f0"
+		"tall"										"25"
 		"visible"									"1"
 		"enabled"									"1"
-		"tabPosition"								"0"
+		"proportionaltoparent"						"1"
 		"labelText"									"%progresscount%"
-		"textAlignment"								"east"
-		"dulltext"									"0"
-		"brighttext"								"0"
-		"font"										"M0refont24"
-		"fgcolor_override" 							"255 255 255 255"
+		"textAlignment"								"center"
+		"font"										"m0refont24"
+		"fgcolor"									"White"
 	}
-	
 	"ItemEffectMeterCountShadow"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"ItemEffectMeterCountShadow"
-		"xpos"										"1"
-		"ypos"										"1"
+		"xpos"										"-1"
+		"ypos"										"-1"
 		"zpos"										"2"
-		"wide"										"50"
-		"tall"										"30"	
-		"pinCorner"									"2"
+		"wide"										"f0"
+		"tall"										"25"
 		"visible"									"1"
 		"enabled"									"1"
-		"tabPosition"								"0"
+		"proportionaltoparent"						"1"
 		"labelText"									"%progresscount%"
-		"textAlignment"								"east"
-		"dulltext"									"0"
-		"brighttext"								"0"
-		"font"										"M0refont24"
-		"fgcolor_override" 							"0 0 0 255"
+		"textAlignment"								"center"
+		"font"										"m0refont24"
+		"fgcolor"									"Black"
+
+		"pin_to_sibling"							"ItemEffectMeterCount"
 	}
-	
-	
-	
-	
-	
-	//////////////////////////////////REMOVED STUFF//////////////////////////////////
-	
+
+
+
+	//==================================================================================================================================================
+	// REMOVED ELEMENTS
+	//==================================================================================================================================================
+
 	"ItemEffectMeterBG"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"ItemEffectMeterBG"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
 	}
 	"ItemEffectMeter"
-	{	
+	{
 		"ControlName"								"ContinuousProgressBar"
 		"fieldName"									"ItemEffectMeter"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
-	}					
+	}
 }

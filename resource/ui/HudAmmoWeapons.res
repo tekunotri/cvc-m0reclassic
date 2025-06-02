@@ -1,118 +1,161 @@
 "Resource/UI/HudAmmoWeapons.res"
 {
+	//==================================================================================================================================================
+	// AMMO ANCHOR
+	// This element can be used to move all the ammo elements at the same time
+	// By increasing the wide, the gap between clip and reserver will also increase
+	//==================================================================================================================================================
+	"AmmoAnchor"
+	{
+		"ControlName"								"EditablePanel"
+		"fieldName"									"AmmoAnchor"
+		"xpos"										"c175"
+		"ypos"										"c95"
+		"zpos"										"0"
+		"wide"										"5"
+		"tall"										"80"
+		"visible"									"0"
+		"enabled"									"1"
+	}
+
+	//==================================================================================================================================================
+	// AMMO IN CLIP
+	//==================================================================================================================================================
 	"AmmoInClip"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"AmmoInClip"
-		"font"										"medium72"
-		"fgcolor"									"255 255 200 255"
-		"xpos"										"c90"
-		"ypos"										"c60"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"5"
-		"wide"										"78"
-		"tall"										"150"
+		"wide"										"150"
+		"tall"										"80"
 		"visible"									"0"
 		"enabled"									"1"
-		"textAlignment"								"east"	
+		"font"										"medium72"
+		"textAlignment"								"east"
 		"labelText"									"%Ammo%"
-	}	
-	
+		"fgcolor"									"Ammo In Clip"
+
+		"pin_to_sibling"							"AmmoAnchor"
+		"pin_corner_to_sibling"						"PIN_TOPRIGHT"
+		"pin_to_sibling_corner"						"PIN_TOPLEFT"
+	}
 	"AmmoInClipShadow"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"AmmoInClipShadow"
-		"font"										"medium72"
-		"fgcolor"									"50 50 50 255"
-		"xpos"										"c92"
-		"ypos"										"c62"
+		"xpos"										"-2"
+		"ypos"										"-2"
 		"zpos"										"5"
-		"wide"										"78"
-		"tall"										"150"
+		"wide"										"150"
+		"tall"										"80"
 		"visible"									"0"
 		"enabled"									"1"
-		"textAlignment"								"east"	
+		"font"										"medium72"
+		"textAlignment"								"east"
 		"labelText"									"%Ammo%"
-	}	
-	
+		"fgcolor"									"Black"
 
+		"pin_to_sibling"							"AmmoInClip"
+	}
+
+	//==================================================================================================================================================
+	// AMMO IN RESERVE
+	//==================================================================================================================================================
 	"AmmoInReserve"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"AmmoInReserve"
-		"font"										"book24"
-		"fgcolor"									"255 250 200 255"
-		"xpos"										"c170"
-		"ypos"										"c130"
+		"xpos"										"0"
+		"ypos"										"-4"
 		"zpos"										"7"
-		"wide"										"40"
-		"tall"										"27"
+		"wide"										"150"
+		"tall"										"80"
 		"visible"									"0"
 		"enabled"									"1"
-		"textAlignment"								"west"		
+		"font"										"book24"
+		"textAlignment"								"west"
 		"labelText"									"%AmmoInReserve%"
-	}	
-	
+		"fgcolor"									"Ammo In Reserve"
+
+		"pin_to_sibling"							"AmmoAnchor"
+		"pin_corner_to_sibling"						"PIN_TOPLEFT"
+		"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+	}
 	"AmmoInReserveShadow"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"AmmoInReserveshadow"
-		"font"										"book24"
-		"fgcolor"									"50 50 50 125"
-		"xpos"										"c171"
-		"ypos"										"c131"
+		"xpos"										"-1"
+		"ypos"										"-1"
 		"zpos"										"7"
-		"wide"										"40"
-		"tall"										"27"
+		"wide"										"150"
+		"tall"										"80"
 		"visible"									"0"
 		"enabled"									"1"
-		"textAlignment"								"west"		
+		"font"										"book24"
+		"textAlignment"								"west"
 		"labelText"									"%AmmoInReserve%"
-	}	
-							
+		"fgcolor"									"Black"
+
+		"pin_to_sibling"							"AmmoInReserve"
+	}
+
+	//==================================================================================================================================================
+	// AMMO NO CLIP
+	//==================================================================================================================================================
 	"AmmoNoClip"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"AmmonoClip"
-		"font"										"medium72"
-		"fgcolor"									"255 255 200 255"
-		"xpos"										"c70"
-		"ypos"    									"c60"
+		"xpos"										"0"
+		"ypos"										"0"
 		"zpos"										"5"
 		"wide"										"150"
-		"tall"										"150"
+		"tall"										"80"
 		"visible"									"0"
 		"enabled"									"1"
-		"textAlignment"								"center"	
+		"font"										"medium72"
+		"textAlignment"								"center"
 		"labelText"									"%Ammo%"
+		"fgcolor"									"Ammo No Clip"
+
+		"pin_to_sibling"							"AmmoAnchor"
+		"pin_corner_to_sibling"						"PIN_CENTER_TOP"
+		"pin_to_sibling_corner"						"PIN_CENTER_TOP"
 	}
-	
 	"AmmoNoClipShadow"
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"AmmonoClipshadow"
-		"font"										"medium72"
-		"fgcolor"									"50 50 50 255"
-		"xpos"										"c72"
-		"ypos"										"c62"
+		"xpos"										"-2"
+		"ypos"										"-2"
 		"zpos"										"5"
 		"wide"										"150"
-		"tall"										"150"
+		"tall"										"80"
 		"visible"									"0"
 		"enabled"									"1"
-		"textAlignment"								"center"	
+		"font"										"medium72"
+		"textAlignment"								"center"
 		"labelText"									"%Ammo%"
+		"fgcolor"									"Black"
+
+		"pin_to_sibling"							"AmmoNoClip"
 	}
-	
-	
-	
-	
-	
-	//////////////////////////////////REMOVED STUFF//////////////////////////////////
-	
+
+
+
+	//==================================================================================================================================================
+	// REMOVED ELEMENTS
+	//==================================================================================================================================================
+
 	"HudWeaponAmmoBG"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"HudWeaponAmmoBG"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
@@ -122,6 +165,8 @@
 	{
 		"ControlName"								"ImagePanel"
 		"fieldName"									"HudWeaponLowAmmoImage"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"

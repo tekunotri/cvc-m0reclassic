@@ -8,17 +8,14 @@
 		"ypos"										"0"
 		"wide"										"f0"
 		"tall"										"480"
-		"autoResize"								"0"
-		"pinCorner"									"0"
 		"visible"									"1"
 		"enabled"									"1"
-		"tabPosition"								"0"
 		"settitlebarvisible"						"1"
 		"PaintBackgroundType"						"0"
 		"bgcolor_override"							"46 43 42 0"
 		"infocus_bgcolor_override"					"46 43 42 0"
 		"outoffocus_bgcolor_override"				"46 43 42 0"
-		
+
 		"title"										"#CharInfoAndSetup"
 		"title_font"								"HudFontMediumBold"
 		"titletextinsetX"							"40"
@@ -26,11 +23,10 @@
 		"titlebarfgcolor_override"					"200 187 161 255"
 		"titlebardisabledfgcolor_override"			"200 187 161 255"
 		"titlebarbgcolor_override"					"46 43 42 255"
-		
+
 		"clientinsetx_override"						"0"
 		"sheetinset_bottom"							"40"
 	}
-	
 	"BackgroundHeader"
 	{
 		"ControlName"								"ImagePanel"
@@ -44,8 +40,7 @@
 		"enabled"									"1"
 		"image"										"loadout_header"
 		"tileImage"									"1"
-	}	
-	
+	}
 	"BackgroundFooter"
 	{
 		"ControlName"								"ImagePanel"
@@ -60,7 +55,6 @@
 		"image"										"loadout_bottom_gradient"
 		"tileImage"									"1"
 	}
-	
 	"FooterLine"
 	{
 		"ControlName"								"ImagePanel"
@@ -74,8 +68,7 @@
 		"enabled"									"1"
 		"image"										"loadout_solid_line"
 		"scaleImage"								"1"
-	}				
-	
+	}
 	"Sheet"
 	{
 		"ControlName"								"EditablePanel"
@@ -84,9 +77,9 @@
 		"tabxdelta"									"10"
 		"tabwidth"									"240"
 		"tabheight"									"20"
-		"transition_time" 							"0"
+		"transition_time"							"0"
 		"yoffset"									"14"
-		
+
 		"HeaderLine"
 		{
 			"ControlName"							"ImagePanel"
@@ -100,71 +93,75 @@
 			"enabled"								"1"
 			"image"									"loadout_solid_line"
 			"scaleImage"							"1"
-		}				
-		
+		}
 		"tabskv"
 		{
 			"textinsetx"							"40"
 			"font"									"HudFontMediumSmallBold"
 			"selectedcolor"							"200 187 161 255"
-			"unselectedcolor"						"130 120 104 255"	
+			"unselectedcolor"						"130 120 104 255"
 			"defaultBgColor_override"				"46 43 42 255"
 			"paintbackground"						"0"
 			"activeborder_override"					"OutlinedGreyBox"
-			"normalborder_override" 				"OutlinedDullGreyBox"
+			"normalborder_override"					"OutlinedDullGreyBox"
 		}
 	}
-	
 	"BackButton"
 	{
 		"ControlName"								"CExButton"
 		"fieldName"									"BackButton"
 		"xpos"										"c-295"
-		"ypos"										"437"
+		"ypos"										"rs1-15"
 		"zpos"										"2"
 		"wide"										"100"
 		"tall"										"25"
-		"autoResize"								"0"
-		"pinCorner"									"3"
 		"visible"									"1"
 		"enabled"									"1"
-		"tabPosition"								"0"
-		"labelText"									"Back (&Q)"
+		"labelText"									"Back"
 		"font"										"HudFontSmallBold"
 		"textAlignment"								"center"
-		"dulltext"									"0"
-		"brighttext"								"0"
-		"default"									"0"
+		"proportionaltoparent"						"1"
 		"Command"									"back"
 		"sound_depressed"							"UI/buttonclick.wav"
 		"sound_released"							"UI/buttonclickrelease.wav"
 	}
-	
+	"BackShortKey"
+	{
+		"ControlName"								"CExButton"
+		"fieldName"									"BackShortKey"
+		"xpos"										"9999"
+		"labelText"									"&Q"
+		"Command"									"back"
+		"visible"									"1"
+	}
 	"CloseButton"
 	{
 		"ControlName"								"CExButton"
 		"fieldName"									"CloseButton"
 		"xpos"										"c190"
-		"ypos"										"437"
+		"ypos"										"rs1-15"
 		"zpos"										"2"
 		"wide"										"100"
 		"tall"										"25"
-		"autoResize"								"0"
-		"pinCorner"									"3"
 		"visible"									"1"
 		"enabled"									"1"
-		"tabPosition"								"0"
-		"labelText"									"Close (&E)"
+		"labelText"									"Close"
 		"font"										"HudFontSmallBold"
 		"textAlignment"								"center"
-		"dulltext"									"0"
-		"brighttext"								"0"
-		"default"									"0"
+		"proportionaltoparent"						"1"
 		"Command"									"close"
 		"sound_depressed"							"UI/buttonclick.wav"
 		"sound_released"							"UI/buttonclickrelease.wav"
 	}
-	
+	"CloseShortKey"
+	{
+		"ControlName"								"CExButton"
+		"fieldName"									"CloseShortKey"
+		"xpos"										"9999"
+		"labelText"									"&E"
+		"Command"									"close"
+		"visible"									"1"
+	}
 	"NotificationsPresentPanel"
 	{
 		"ControlName"								"CNotificationsPresentPanel"
@@ -176,5 +173,22 @@
 		"tall"										"50"
 		"visible"									"0"
 		"enabled"									"1"
+	}
+	"ReloadSchemeButton"
+	{
+		"ControlName"								"CExButton"
+		"fieldName"									"ReloadSchemeButton"
+		"xpos"										"rs1-5"
+		"ypos"										"35"
+		"zpos"										"250"
+		"wide"										"15"
+		"tall"										"15"
+		"visible"									"0"
+		"enabled"									"1"
+		"proportionaltoparent"						"1"
+		"labelText"									"RS"
+		"font"										"Default"
+		"textAlignment"								"center"
+		"Command"									"reloadscheme"
 	}
 }

@@ -1,54 +1,51 @@
 "Resource/UI/HudObjectiveTimePanel.res"
-{	
+{
 	"ServerTimeLimitLabel"
 	{
-		"ControlName" 								"CExLabel"
-		"fieldName" 								"ServerTimeLimitLabel"
-		"xpos" 										"26"
-		"ypos" 										"14"
-		"zpos" 										"3"
-		"wide" 										"50"
+		"ControlName"								"CExLabel"
+		"fieldName"									"ServerTimeLimitLabel"
+		"xpos"										"cs-0.5"
+		"ypos"										"14"
+		"zpos"										"3"
+		"wide"										"f0"
 		"tall"										"15"
-		"visible" 									"1"
-		"enabled" 									"1"
+		"visible"									"1"
+		"enabled"									"1"
+		"proportionaltoparent"						"1"
 		"labelText"									"%servertimeleft%"
 		"textAlignment"								"center"
-		"dulltext" 									"0"
-		"brighttext" 								"0"
-		"wrap" 										"0"
-		"font" 										"medium10"
-		"fgcolor"									"255 255 200 255"
-		
-		if_mvm
+		"font"										"medium10"
+		"fgcolor"									"cvcmain"
+
+		"if_match"
 		{
-			"visible"								"0"
+			"ypos"									"19"
 		}
 	}
-	
+
+
+
+	//==================================================================================================================================================
+	// REMOVED ELEMENTS
+	//==================================================================================================================================================
+
 	"TimePanelBG"
 	{
-		"ControlName"				"ImagePanel"
-		"fieldName"					"TimePanelBG"
-		"xpos"						"26"
-		"ypos"						"0"
-		"zpos"						"2"
-		"wide"						"50"
-		"tall"						"27"
-		"visible"					"1"
-		"enabled"					"1"	
-		"fillcolor"  					"0 0 0 0"//"50 50 50 150"	
-		"scaleImage"					"1"	
+		"ControlName"								"CTFImagePanel"
+		"fieldName"									"TimePanelBG"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
 	}
-	
-	
-	
-	//////////////////////////////////REMOVED STUFF//////////////////////////////////
-	
-
 	"TimePanelProgressBar"
 	{
 		"ControlName"								"CTFProgressBar"
 		"fieldName"									"TimePanelProgressBar"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
@@ -58,6 +55,8 @@
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"WaitingForPlayersLabel"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
@@ -67,6 +66,8 @@
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"WaitingForPlayersBG"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
@@ -76,6 +77,8 @@
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"OvertimeLabel"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
@@ -85,6 +88,8 @@
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"OvertimeBG"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
@@ -94,6 +99,8 @@
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"SuddenDeathLabel"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
@@ -103,6 +110,8 @@
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"SuddenDeathBG"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
@@ -112,27 +121,33 @@
 	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"SetupLabel"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
 		"enabled"									"0"
-	}	
+	}
 	"SetupBG"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"SetupBG"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
-		"enabled"									"1"
+		"enabled"									"0"
 	}
 	"ServerTimeLimitLabelBG"
 	{
-		"ControlName" 								"ImagePanel"
-		"fieldName" 								"ServerTimeLimitLabelBG"
-		"wide"		        						"0"
-		"tall"		         						"0"
-		"visible"	        						"0"
-		"enabled"	        						"0"
-	}	
+		"ControlName"								"ImagePanel"
+		"fieldName"									"ServerTimeLimitLabelBG"
+		"xpos"										"9999"
+		"ypos"										"9999"
+		"wide"										"0"
+		"tall"										"0"
+		"visible"									"0"
+		"enabled"									"0"
+	}
 }

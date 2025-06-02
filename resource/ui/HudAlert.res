@@ -1,35 +1,36 @@
 "Resource/UI/HudAlert.res"
 {
 	"AlertLabel"
-	{	
+	{
 		"ControlName"								"CExLabel"
 		"fieldName"									"AlertLabel"
-		"font"										"m0refont12"
-		"xpos"										"100"
-		"ypos"										"70"
+		"font"										"m0refont12Shadow"
+		"xpos"										"cs-0.5"
+		"ypos"										"80"
 		"zpos"										"1"
-		"wide"										"230"	
-		"tall"										"35"
-		"autoResize"								"0"
-		"pinCorner"									"0"
+		"wide"										"f0"
+		"tall"										"15"
 		"visible"									"1"
 		"enabled"									"1"
 		"wrap"										"1"
+		"centerwrap"								"1"
 		"labelText"									""
-		"fgcolor"									"255 255 255 255"
+		"fgcolor"									"White"
 		"textAlignment"								"center"
 	}
-	
-	
-	
-	
-	
-	//////////////////////////////////REMOVED STUFF//////////////////////////////////
-	
+
+
+
+	//==================================================================================================================================================
+	// REMOVED ELEMENTS
+	//==================================================================================================================================================
+
 	"HudAlertBG"
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"HudAlertBG"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
@@ -39,6 +40,8 @@
 	{
 		"ControlName"								"CTFImagePanel"
 		"fieldName"									"AlertImage"
+		"xpos"										"9999"
+		"ypos"										"9999"
 		"wide"										"0"
 		"tall"										"0"
 		"visible"									"0"
